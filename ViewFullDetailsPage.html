@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Page</title>
+    <link rel="stylesheet" href="DetailsPage.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Biletco</h1>
+      <div class="right-header">
+        <ul>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="image-container">
+        <img src="../images/konser.jpg" alt="Event Image" />
+      </div>
+
+      <div class="event-container">
+        <div class="event-details">
+          <h2>Event Name</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+            ratione tempora repellat ipsum, tenetur veritatis.
+          </p>
+
+          <div class="form-group">
+            <div class="form-item">
+              <label for="category">Category</label>
+              <select id="category" name="category">
+                <option value="general">General</option>
+                <option value="vip">VIP</option>
+              </select>
+            </div>
+            <div class="form-item">
+              <label for="ticket-number">Number of Tickets</label>
+              <input id="ticket-number" type="number" min="1" value="1" />
+            </div>
+          </div>
+
+          <p><strong>Price:</strong> xxx TL</p>
+
+          <button class="btn">Get Your Ticket!</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
