@@ -59,7 +59,7 @@ header h1{
     border-radius: 20px;
     margin: 0px 30vw;
     margin-top: 10vh;
-    padding: 3em;
+    padding: 1em;
 }
 .container h1{
     font-size: 1.6em;
@@ -87,4 +87,54 @@ header h1{
 .kutu:hover{
     background-color: #0091ff87;
     transition: 1s;
+}
+
+.input-wrap{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.input-wrap label{
+    font-size: 1.5em;
+    color: rgb(0, 146, 255);
+}
+.input-wrap input{
+    border-radius: 10px;
+    padding: 10px;
+    padding-right: 40px;
+}
+
+form button{
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.3em;
+    color: #0092FF;
+    transition: 0.5s;
+
+}
+form button:hover{
+    font-size: 1.5em;
+    transition: 0.5s;
+}
+.input-wrap i{
+    position: relative;
+    left:115px;
+    bottom:35px
+}
+.pulse {
+    animation: pulse-animation 2s infinite;
+  }
+  
+  @keyframes pulse-animation {
+    0% {
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+    }
+    50% {
+      box-shadow: 0px 0px 20px 0px rgba(0,146, 255, 1);
+    }
+    100% {
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+    }
 }
