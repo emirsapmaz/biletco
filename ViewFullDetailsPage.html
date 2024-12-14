@@ -45,9 +45,36 @@
 
           <p><strong>Price:</strong> xxx TL</p>
 
-          <button class="btn">Get Your Ticket!</button>
+          <button class="btn" onclick="showModal()">Get Your Ticket!</button>
         </div>
       </div>
     </main>
+
+    <!-- Modal (Popup) -->
+    <div id="ticketModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Ticket Purchased</h2>
+        <p>Your ticket has been successfully purchased!</p>
+      </div>
+    </div>
+
+    <script>
+      // Modal functionality
+      function showModal() {
+        document.getElementById('ticketModal').style.display = 'block';
+      }
+
+      function closeModal() {
+        document.getElementById('ticketModal').style.display = 'none';
+      }
+
+      // Close the modal if the user clicks outside of it
+      window.onclick = function(event) {
+        if (event.target == document.getElementById('ticketModal')) {
+          closeModal();
+        }
+      }
+    </script>
   </body>
 </html>

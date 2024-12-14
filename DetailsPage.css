@@ -1,3 +1,4 @@
+/* General page styles */
 * {
   margin: 0;
   padding: 0;
@@ -122,4 +123,41 @@ header h1 {
 
 .event-details .btn:hover {
   background-color: #0056b3;
+}
+
+/* Modal Styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.4); /* Background color with transparency */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 20% auto; /* Center the modal vertically and horizontally */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 400px; /* Adjust the width to make the modal smaller */
+  border-radius: 10px;
+  text-align: center;
+
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
