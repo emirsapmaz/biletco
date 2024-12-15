@@ -79,6 +79,8 @@ header h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.5s;
+
 }
 .kutu a{
     font-size: 2em;
@@ -86,7 +88,8 @@ header h1{
 }
 .kutu:hover{
     background-color: #0091ff87;
-    transition: 1s;
+    font-size: 1.1em;
+    transition: 0.5s;
 }
 
 .input-wrap{
