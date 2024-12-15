@@ -8,39 +8,36 @@
   font-weight: normal;
   font-style: normal;
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Raleway;
-    text-decoration: none;
-    font-size: 20px;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Raleway;
+  text-decoration: none;
+  font-size: 20px;
 }
-header{
-    background-color: #0092FF;
-    padding: 0px 30px;
-    display: flex;
-    justify-content: space-between;
-
+header {
+  background-color: #0092ff;
+  padding: 0px 30px;
+  display: flex;
+  justify-content: space-between;
 }
-.right-header{
-    display: flex;
-
+.right-header {
+  display: flex;
 }
-.right-header ul{
-    display: flex;
-    list-style-type: none;  
-    justify-content: center; 
-    align-items: center;
+.right-header ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
 }
-.right-header li{
-    padding: 0px 10px;
+.right-header li {
+  padding: 0px 10px;
 }
-.right-header a{
-    font-size: 1.3em;
-    color: white;
-    transition: 0.5s;
+.right-header a {
+  font-size: 1.3em;
+  color: white;
+  transition: 0.5s;
 }
 .right-header li a:hover {
   color: rgb(122, 122, 122);
@@ -48,109 +45,107 @@ header{
   font-size: 1.4em;
 }
 
-.right-header button{
-    border-radius: 10px;
-    padding: 10px;
-    font-size: 1em;
-    color: #0092FF;
-    transition: 0.5s;
+.right-header button {
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1em;
+  color: #0092ff;
+  transition: 0.5s;
 }
-.right-header button:hover{
-    font-size: 1.1em;
-    transition: 0.5s;
-}
-
-header h1{
-    font-size: 6em;
-    font-family: "Booter - Zero Zero";
-    font-weight: normal;
-    color: white;
-}
-.container{
-    text-align: center;
-    border-style: dashed;
-    border-radius: 20px;
-    margin: 0px 30vw;
-    margin-top: 10vh;
-    padding: 1em;
-}
-.container h1{
-    font-size: 1.6em;
-}
-.kutular{
-    padding-top: 8em;
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-}
-.kutu{
-    background-color: #0092FF;
-    border: 1px solid black;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
-    padding: 10px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s;
-
-}
-.kutu a{
-    font-size: 2em;
-    color: white;
-}
-.kutu:hover{
-    background-color: #0091ff87;
-    font-size: 1.1em;
-    transition: 0.5s;
+.right-header button:hover {
+  font-size: 1.1em;
+  transition: 0.5s;
 }
 
-.input-wrap{
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-    justify-content: center;
-    align-items: center;
+header h1 {
+  font-size: 6em;
+  font-family: "Booter - Zero Zero";
+  font-weight: normal;
+  color: white;
 }
-.input-wrap label{
-    font-size: 1.5em;
-    color: rgb(0, 146, 255);
+.container {
+  text-align: center;
+  border-style: dashed;
+  border-radius: 20px;
+  margin: 0px 30vw;
+  margin-top: 10vh;
+  padding: 1em;
 }
-.input-wrap input{
-    border-radius: 10px;
-    padding: 10px;
-    padding-right: 40px;
+.container h1 {
+  font-size: 1.6em;
+}
+.kutular {
+  padding-top: 8em;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.kutu {
+  background-color: #0092ff;
+  border: 1px solid black;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+  padding: 10px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.kutu a {
+  font-size: 2em;
+  color: white;
+}
+.kutu:hover {
+  background-color: #0091ff87;
+  font-size: 1.1em;
+  transition: 0.5s;
 }
 
-form button{
-    border-radius: 10px;
-    padding: 10px;
-    font-size: 1.3em;
-    color: #0092FF;
-    transition: 0.5s;
+.input-wrap {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.input-wrap label {
+  font-size: 1.5em;
+  color: rgb(0, 146, 255);
+}
+.input-wrap input {
+  border-radius: 10px;
+  padding: 10px;
+  padding-right: 40px;
+}
 
+form button {
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1.3em;
+  color: #0092ff;
+  transition: 0.5s;
 }
-form button:hover{
-    font-size: 1.5em;
-    transition: 0.5s;
+form button:hover {
+  font-size: 1.5em;
+  transition: 0.5s;
 }
-.input-wrap i{
-    position: relative;
-    left:115px;
-    bottom:35px
+.input-wrap i {
+  position: relative;
+  left: 115px;
+  bottom: 35px;
 }
 .pulse {
-    animation: pulse-animation 2s infinite;
+  animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
   }
-  
-  @keyframes pulse-animation {
-    0% {
-      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
-    }
-    50% {
-      box-shadow: 0px 0px 20px 0px rgba(0,146, 255, 1);
-    }
-    100% {
-      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
-    }
+  50% {
+    box-shadow: 0px 0px 20px 0px rgba(0, 146, 255, 1);
+  }
+  100% {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+  }
 }

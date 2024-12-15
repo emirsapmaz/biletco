@@ -10,12 +10,12 @@
     <header>
       <a href="index.html"><h1>Biletco</h1></a>
       <div class="right-header">
-          <ul>
-              <li><a href="login.html">Login</a></li>
-              <li><a href="register.html">Register</a></li>
-          </ul>
+        <ul>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
       </div>
-  </header>
+    </header>
     <main>
       <div class="image-container">
         <img src="images/konser.jpg" alt="Event Image" />
@@ -54,27 +54,27 @@
     <div id="ticketModal" class="modal">
       <div class="modal-content">
         <span class="close" onclick="closeModal()">&times;</span>
-        <h2>Ticket Purchased</h2>
-        <p>Your ticket has been successfully purchased!</p>
+        <h2>Your ticket has been successfully purchased!</h2>
+        <p>Your ticket number is xxxx</p>
       </div>
     </div>
 
     <script>
       // Modal functionality
       function showModal() {
-        document.getElementById('ticketModal').style.display = 'block';
+        document.getElementById("ticketModal").style.display = "block";
       }
 
       function closeModal() {
-        document.getElementById('ticketModal').style.display = 'none';
+        document.getElementById("ticketModal").style.display = "none";
       }
 
       // Close the modal if the user clicks outside of it
-      window.onclick = function(event) {
-        if (event.target == document.getElementById('ticketModal')) {
+      window.onclick = function (event) {
+        if (event.target == document.getElementById("ticketModal")) {
           closeModal();
         }
-      }
+      };
     </script>
   </body>
 </html>
