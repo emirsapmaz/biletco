@@ -68,8 +68,6 @@ header h1{
 }
 
 
-
-/* Tablo Stili */
 .event-table {
     width: 90%;
     margin: 40px auto;
@@ -81,7 +79,7 @@ header h1{
 }
 
 .event-table thead {
-    background-color: #34495e;
+    background-color: #0092FF;
     color: #fff;
 }
 
@@ -94,30 +92,27 @@ header h1{
     font-size: 1.1rem;
 }
 
-.event-table tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
 
 .event-table tbody tr:hover {
     background-color: #f1f1f1;
 }
 
 .manage-btn {
-    background-color: #2980b9;
-    color: #fff;
-    border: none;
-    padding: 8px 15px;
-    font-size: 0.9rem;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1em;
+    color: #0092FF;
+    transition: 0.5s;
     cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
+    
 }
 
 .manage-btn:hover {
-    background-color: #1c5980;
+    font-size: 1.1em;
+    transition: 0.5s;
 }
 
-/* Durum Etiketleri */
+
 .active {
     color: #27ae60;
     font-weight: bold;
@@ -133,7 +128,6 @@ header h1{
 }
 
 
-/* Responsive Tasarım */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
