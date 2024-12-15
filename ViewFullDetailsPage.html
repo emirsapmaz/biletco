@@ -8,13 +8,16 @@
   </head>
   <body>
     <header>
-      <a href="index.html"><h1>Biletco</h1></a>
+      <a href="MainPage.html"><h1>Biletco</h1></a>
+      <div class="search-container">
+        <input type="text" id="search" placeholder="Search by event name" onkeyup="searchEvent()">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
       <div class="right-header">
         <ul>
-          <li><a href="login.html">Login</a></li>
-          <li><a href="register.html">Register</a></li>
+          <li><p style="color: white;"><strong>Welcome Ahmet</strong></p></li>
         </ul>
-      </div>
+    </div>
     </header>
     <main>
       <div class="image-container">
@@ -43,14 +46,13 @@
             </div>
           </div>
 
-          <p><strong>Price:</strong> xxx TL</p>
+          <p><strong>Price:</strong> <span id="price">100</span> TL</p>
 
           <button class="btn" onclick="showModal()">Get Your Ticket!</button>
         </div>
       </div>
     </main>
 
-    <!-- Modal (Popup) -->
     <div id="ticketModal" class="modal">
       <div class="modal-content">
         <span class="close" onclick="closeModal()">&times;</span>
@@ -60,7 +62,6 @@
     </div>
 
     <script>
-      // Modal functionality
       function showModal() {
         document.getElementById("ticketModal").style.display = "block";
       }
@@ -68,13 +69,25 @@
       function closeModal() {
         document.getElementById("ticketModal").style.display = "none";
       }
-
-      // Close the modal if the user clicks outside of it
       window.onclick = function (event) {
         if (event.target == document.getElementById("ticketModal")) {
           closeModal();
         }
       };
+
+      const ticketPrice = 100; 
+
+      // Reference to the ticket input and price display
+      const ticketInput = document.getElementById('ticket-number');
+      const priceDisplay = document.getElementById('price');
+
+      // Event listener to update price whenever ticket number changes
+      ticketInput.addEventListener('input', () => {
+        const ticketCount = ticketInput.value; 
+        const totalPrice = ticketCount * ticketPrice;
+        priceDisplay.textContent = totalPrice;
+      });
+
     </script>
   </body>
 </html>

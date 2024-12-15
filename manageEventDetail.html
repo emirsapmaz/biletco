@@ -17,16 +17,17 @@
 </head>
 <body>
     <header>
-        <a href="index.html"><h1>Biletco</h1></a>
-        <div class="right-header">
-            <ul>
-                <li><button type="button" onclick="window.location.href='createEvent.html'">Create Event</button></a></li>   
-                <li><p style="color: white;"><strong>Welcome Ahmet</strong></p></li>
-            </ul>
-        </div>
+        <a href="mainOrganizer.html"><h1>Biletco</h1></a>
+            <div class="right-header">
+                <ul>
+                    <li><button type="button" onclick="window.location.href='createEvent.html'">Create Event</button></a></li>   
+                    <li><button type="button" onclick="window.location.href='manageEvents.html'">Manage Event</button></a></li>   
+                    <li><p style="color: white;"><strong>Welcome Ahmet</strong></p></li>
+                </ul>
+            </div>
     </header>
     <div class="container" style="margin-top: 2vh;">
-        <form action="" method="post">
+        <form action="manageEvents.html" method="post">
             <div class="input-wrap">
                 <label for="event-name">Event Name</label>
                 <input type="text" id="eventName" name="eventName" placeholder="Enter the event name" required>

@@ -17,37 +17,38 @@
 </head>
 <body>
     <header>
-        <a href="index.html"><h1>Biletco</h1></a>
-        <div class="right-header">
-            <ul>
-                <li><button type="button" onclick="window.location.href='createEvent.html'">Create Event</button></a></li>   
-                <li><p style="color: white;"><strong>Welcome Ahmet</strong></p></li>
-            </ul>
-        </div>
+        <a href="mainOrganizer.html"><h1>Biletco</h1></a>
+            <div class="right-header">
+                <ul>
+                    <li><button type="button" onclick="window.location.href='createEvent.html'">Create Event</button></a></li>   
+                    <li><button type="button" onclick="window.location.href='manageEvents.html'">Manage Event</button></a></li>   
+                    <li><p style="color: white;"><strong>Welcome Ahmet</strong></p></li>
+                </ul>
+            </div>
     </header>
     <div class="container" style="margin-top: 2vh;">
-        <form action="" method="post">
-            <div class="input-wrap">
+        <form action="mainOrganizer.html" method="post">
+            <div class="input-wrap wid">
                 <label for="event-name">Event Name</label>
                 <input type="text" id="eventName" name="eventName" placeholder="Enter the event name" required>
             </div>
-            <div class="input-wrap">
+            <div class="input-wrap wid">
                 <label for="eventLocation">Event Location</label>
                 <input type="text" id="eventLocation" name="eventLocation" placeholder="Enter event location" required>
             </div>
-            <div class="input-wrap">
+            <div class="input-wrap wid">
                 <label for="eventDate">Event Date</label>
                 <input type="date" id="eventDate" name="eventDate" placeholder="Enter event date" required>
             </div>
-            <div class="input-wrap">
+            <div class="input-wrap wid">
                 <label for="capacity">Capacity</label>
                 <input type="number" id="capacity" name="capacity" required min="1" placeholder="Enter event capacity" required>
             </div>
-            <div class="input-wrap">
+            <div class="input-wrap wid">
                 <label for="price">Price</label>
             <input type="number" id="price" name="price" required min="0" placeholder="Enter the price">
             </div>
-            <div class="input-wrap">
+            <div class="input-wrap ">
                 <label for="category">Category</label>
             <select id="category" name="category" style="padding: 10px; margin-top:10px ; width: 20vw;" required>
                 <option value="">Select a category</option>
@@ -59,7 +60,7 @@
             </div>
             <div class="input-wrap">
                 <label for="eventDescription">Event Description</label>
-            <textarea style="width: 20vw;" id="eventDescription" name="eventDescription"  required placeholder="Enter a event description"></textarea>
+            <textarea style="width: 20vw; padding: 10px; font-size: 0.9em;" id="eventDescription" name="eventDescription"  required placeholder="Enter a event description"></textarea>
             </div>
             <br>
             <button class="pulse" type="submit">Create Event</button>
