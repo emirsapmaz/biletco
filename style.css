@@ -47,6 +47,19 @@ header{
   transition: 0.5s;
   font-size: 1.4em;
 }
+
+.right-header button{
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1em;
+    color: #0092FF;
+    transition: 0.5s;
+}
+.right-header button:hover{
+    font-size: 1.1em;
+    transition: 0.5s;
+}
+
 header h1{
     font-size: 6em;
     font-family: "Booter - Zero Zero";

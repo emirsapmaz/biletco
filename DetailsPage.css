@@ -1,46 +1,57 @@
-/* General page styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Raleway;
-  text-decoration: none;
-  font-size: 20px;
-}
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400");
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
 
-header {
-  background-color: #0092ff;
-  padding: 0px 30px;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 45px;
+@font-face {
+  font-family: "Booter - Zero Zero";
+  src: url("Booter\ -\ Zero\ Zero.woff") format("woff"),
+    url("Booter\ -\ Zero\ Zero.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
-.right-header {
-  display: flex;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Raleway;
+    text-decoration: none;
+    font-size: 20px;
+
 }
-.right-header ul {
-  display: flex;
-  list-style-type: none;
-  justify-content: center;
-  align-items: center;
+header{
+    background-color: #0092FF;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+
 }
-.right-header li {
-  padding: 0px 10px;
+.right-header{
+    display: flex;
+
 }
-.right-header a {
-  font-size: 1.3em;
-  color: white;
-  transition: 0.5s;
+.right-header ul{
+    display: flex;
+    list-style-type: none;  
+    justify-content: center; 
+    align-items: center;
+}
+.right-header li{
+    padding: 0px 10px;
+}
+.right-header a{
+    font-size: 1.3em;
+    color: white;
+    transition: 0.5s;
 }
 .right-header li a:hover {
   color: rgb(122, 122, 122);
   transition: 0.5s;
   font-size: 1.4em;
 }
-header h1 {
-  font-size: 6em;
-  font-weight: normal;
-  color: white;
+header h1{
+    font-size: 6em;
+    font-family: "Booter - Zero Zero";
+    font-weight: normal;
+    color: white;
 }
 
 .image-container {
@@ -49,6 +60,7 @@ header h1 {
   height: 300px;
   background-color: #ddd;
   margin: 0 auto;
+  margin-top: 25px;
   overflow: hidden;
 }
 
