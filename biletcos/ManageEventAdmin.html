@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Page</title>
+    <link rel="stylesheet" href="ManageEventAdmin.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="AdminPage.html"><h1>Biletco</h1></a>
+      <div class="search-container">
+        <input
+          type="text"
+          id="search"
+          placeholder="Search by event name"
+          onkeyup="searchEvent()"
+        />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <div class="right-header">
+        <ul>
+          <li>
+            <p style="color: white"><strong>Admin</strong></p>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="image-container">
+        <img src="images/konser.jpg" alt="Event Image" />
+      </div>
+
+      <div class="event-container">
+        <div class="event-details">
+          <h2>Event Name</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+            ratione tempora repellat ipsum, tenetur veritatis.
+          </p>
+
+          <div class="form-group">
+            <div class="form-item">
+              <label for="category">Category</label>
+              <select id="category" name="category">
+                <option value="general">General</option>
+              </select>
+            </div>
+            <div class="form-item">
+              <label for="ticket-number">Number of Tickets</label>
+              <input id="ticket-number" type="number" min="1" value="1" />
+            </div>
+          </div>
+
+          <p><strong>Price:</strong> <span id="price">100</span> TL</p>
+          <button class="btn-reject" onclick="rejectEvent()">
+            Reject Event
+          </button>
+          <button class="btn-approve" onclick="showModal()">
+            Approve Event
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <div id="event-approve" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModalApprove()">&times;</span>
+        <h2>Congrats! You approved this event! The event is live now!</h2>
+      </div>
+    </div>
+
+    <div id="event-reject" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModalReject()">&times;</span>
+        <h2>You have rejected the event!</h2>
+      </div>
+    </div>
+
+    <script>
+      function showModal() {
+        document.getElementById("event-approve").style.display = "block";
+      }
+      function rejectEvent() {
+        document.getElementById("event-reject").style.display = "block";
+      }
+
+      function closeModalApprove() {
+        document.getElementById("event-approve").style.display = "none";
+      }
+      function closeModalReject() {
+        document.getElementById("event-reject").style.display = "none";
+      }
+
+      const ticketPrice = 100;
+
+      // Reference to the ticket input and price display
+      const ticketInput = document.getElementById("ticket-number");
+      const priceDisplay = document.getElementById("price");
+
+      // Event listener to update price whenever ticket number changes
+      ticketInput.addEventListener("input", () => {
+        const ticketCount = ticketInput.value;
+        const totalPrice = ticketCount * ticketPrice;
+        priceDisplay.textContent = totalPrice;
+      });
+    </script>
+  </body>
+</html>
