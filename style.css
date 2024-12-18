@@ -117,6 +117,9 @@ header h1 {
   padding: 10px;
   /*padding-right: 40px;*/
 }
+.input-wrap i {
+  padding-right: 15px;
+}
 
 form button {
   border-radius: 10px;
@@ -149,7 +152,7 @@ form button:hover {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
   }
 }
-.wid input{
+.wid input {
   width: 20vw;
   font-size: 0.9em;
 }
