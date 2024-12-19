@@ -5,19 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Event Page</title>
     <link rel="stylesheet" href="DetailsPage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
       <a href="MainPage.html"><h1>Biletco</h1></a>
       <div class="search-container">
-        <input type="text" id="search" placeholder="Search by event name" onkeyup="searchEvent()">
+        <input
+          type="text"
+          id="search"
+          placeholder="Search by event name"
+          onkeyup="searchEvent()"
+        />
         <i class="fa-solid fa-magnifying-glass"></i>
       </div>
       <div class="right-header">
         <ul>
-          <li><p style="color: white;"><strong>Welcome Ahmet</strong></p></li>
+          <li>
+            <p style="color: white"><strong>Welcome Ahmet</strong></p>
+          </li>
         </ul>
-    </div>
+      </div>
     </header>
     <main>
       <div class="image-container">
@@ -75,19 +89,18 @@
         }
       };
 
-      const ticketPrice = 100; 
+      const ticketPrice = 100;
 
       // Reference to the ticket input and price display
-      const ticketInput = document.getElementById('ticket-number');
-      const priceDisplay = document.getElementById('price');
+      const ticketInput = document.getElementById("ticket-number");
+      const priceDisplay = document.getElementById("price");
 
       // Event listener to update price whenever ticket number changes
-      ticketInput.addEventListener('input', () => {
-        const ticketCount = ticketInput.value; 
+      ticketInput.addEventListener("input", () => {
+        const ticketCount = ticketInput.value;
         const totalPrice = ticketCount * ticketPrice;
         priceDisplay.textContent = totalPrice;
       });
-
     </script>
   </body>
 </html>
