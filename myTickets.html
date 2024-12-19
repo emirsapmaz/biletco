@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biletco</title>
+    <link rel="stylesheet" href="myTickets.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  </head>
+  <body>
+    <header>
+      <a href="MainPage.html"><h1>Biletco</h1></a>
+      <div class="search-container">
+        <input type="text" id="search" placeholder="Search by event name" onkeyup="searchEvent()">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <div class="right-header">
+        <ul>
+          <li><button type="button" onclick="window.location.href=''">My Tickets</button></li>   
+          <li><button type="button" onclick="window.location.href=''">Favourite Events</button></li>   
+          <li><p style="color: white;"><strong>Welcome Ahmet</strong></p></li>
+        </ul>
+    </div>
+    </header>
+    <body>
+    
+        <table class="active-event-table">
+            <thead>
+                <tr>
+                    <th colspan="2">Active Tickets</th>
+                    
+                </tr>
+            </thead>
+            <thead>
+                <tr>
+                    <th style="background-color: #3cbd00;">Event Name</th>
+                    <th style="background-color: #3cbd00;">Ticket Number</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Music Festival</td>
+                    <td>2423131</td>
+                </tr>
+                <tr>
+                    <td>Boxing Match</td>
+                    <td>2268656</td>
+                </tr>
+                <tr>
+                    <td>Football Match</td>
+                    <td>763452234</td>
+                </tr>
+                
+            </tbody>
+        </table>
+
+        <table class="expired-event-table">
+            <thead>
+                <tr>
+                    <th colspan="2">Expired Tickets</th>
+                    
+                </tr>
+            </thead>
+            <thead>
+                <tr>
+                    <th style="background-color: #b9020e;">Event Name</th>
+                    <th style="background-color: #b9020e;">Ticket Number</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Theatre</td>
+                    <td>23643524</td>
+                </tr>
+                <tr>
+                    <td>Concert</td>
+                    <td>23514341</td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </body>
+  </body>
+</html>

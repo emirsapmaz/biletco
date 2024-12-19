@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400");
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+
+@font-face {
+  font-family: "Booter - Zero Zero";
+  src: url("Booter\ -\ Zero\ Zero.woff") format("woff"),
+    url("Booter\ -\ Zero\ Zero.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Raleway;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+header {
+  background-color: #0092ff;
+  padding: 0px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.right-header {
+  display: flex;
+}
+.right-header ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+}
+.right-header li {
+  padding: 0px 10px;
+}
+.right-header a {
+  font-size: 1.3em;
+  color: white;
+  transition: 0.5s;
+}
+.right-header li a:hover {
+  color: rgb(122, 122, 122);
+  transition: 0.5s;
+  font-size: 1.4em;
+}
+header h1 {
+  font-size: 6em;
+  font-family: "Booter - Zero Zero";
+  font-weight: normal;
+  color: white;
+  margin: 0px 10px 0px 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.event-container {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  background-color: #fff;
+  box-shadow: 4px 5px 4px rgba(0.3, 0.4, 0.5, 0.5);
+  border-radius: 10px;
+  margin: 0 auto;
+  border: 2px solid black;
+}
+.event-container i{
+  padding: 10px;
+  cursor: pointer;
+  height: 42.5px;
+}
+
+
+.img img {
+  height: 100%;
+  width: 350px;
+  border-radius: 8px 0px 0px 8px;
+}
+
+.event-details {
+  padding: 20px;
+  flex-direction: column;
+  justify-content: center;
+}
+.event-details .btn-div {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+}
+.event-details .btn-div button {
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1em;
+  color: #0092ff;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.event-details .btn-div button:hover {
+  font-size: 1.1em;
+  transition: 0.5s;
+}
+
+.event-details h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.event-details p {
+  margin: 10px 0 0;
+  color: #666;
+}
+.right-header button {
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1em;
+  color: #0092ff;
+  transition: 0.5s;
+  cursor: pointer;
+
+}
+.right-header button:hover {
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-container i{
+  position: relative;
+  right: 30px;
+}
+
+#search:focus {
+  border-color: #007BFF; 
+}
+#search {
+  width: 30vw;
+  padding: 12px;
+  padding-right: 30px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 30px; 
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+.active-event-table {
+    width: 90%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    
+}
+
+.active-event-table thead {
+    background-color: #48db04;
+    color: #fff;
+}
+
+.active-event-table th, .active-event-table td {
+    padding: 15px 20px;
+    text-align: center;
+    
+}
+
+.active-event-table th {
+    font-size: 1.1rem;
+}
+
+
+.active-event-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.expired-event-table {
+    width: 90%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    
+}
+
+.expired-event-table thead {
+    background-color: #d5000e;
+    color: #fff;
+}
+
+.expired-event-table th, .expired-event-table td {
+    padding: 15px 20px;
+    text-align: center;
+    
+}
+
+.expired-event-table th {
+    font-size: 1.1rem;
+}
+
+
+.expired-event-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .right-header ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .right-header ul li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .event-table {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .event-table th, .event-table td {
+        padding: 10px 15px;
+    }
+}
