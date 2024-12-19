@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Biletco</title>
-    <link rel="stylesheet" href="myTickets.css" />
+    <link rel="stylesheet" href="favourites.css" />
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -22,7 +22,7 @@
       </div>
       <div class="right-header">
         <ul>
-          <li><button type="button" onclick="window.location.href='myTickets.hmtl'">My Tickets</button></li>   
+          <li><button type="button" onclick="window.location.href='myTickets.html'">My Tickets</button></li>   
           <li><button type="button" onclick="window.location.href='favourites.html'">Favourite Events</button></li>   
           <li><p style="color: white;"><strong>Welcome Ahmet</strong></p></li>
         </ul>
@@ -30,17 +30,10 @@
     </header>
     <body>
     
-        <table class="active-event-table">
+        <table class="favourite-event-table">
             <thead>
                 <tr>
-                    <th colspan="2">Active Tickets</th>
-                    
-                </tr>
-            </thead>
-            <thead>
-                <tr>
-                    <th style="background-color: #3cbd00;">Event Name</th>
-                    <th style="background-color: #3cbd00;">Ticket Number</th>
+                    <th colspan="2">Favourite Tickets</th>
                     
                 </tr>
             </thead>
@@ -61,32 +54,6 @@
             </tbody>
         </table>
 
-        <table class="expired-event-table">
-            <thead>
-                <tr>
-                    <th colspan="2">Expired Tickets</th>
-                    
-                </tr>
-            </thead>
-            <thead>
-                <tr>
-                    <th style="background-color: #b9020e;">Event Name</th>
-                    <th style="background-color: #b9020e;">Ticket Number</th>
-                    
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Theatre</td>
-                    <td>23643524</td>
-                </tr>
-                <tr>
-                    <td>Concert</td>
-                    <td>23514341</td>
-                </tr>
-                
-            </tbody>
-        </table>
     </body>
   </body>
 </html>
