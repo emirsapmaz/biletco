@@ -29,7 +29,7 @@
             </div>
     </header>
     <div class="container" style="margin-top: 2vh;">
-        <form action="mainOrganizer.html" method="post">
+        <form action="mainOrganizer.html" method="post" onsubmit="handleFormSubmit(event)">
             <div class="input-wrap wid">
                 <label for="event-name">Event Name</label>
                 <input type="text" id="eventName" name="eventName" placeholder="Enter the event name" required>
@@ -68,6 +68,36 @@
             <button class="pulse" type="submit">Create Event</button>
         </form>
     </div>
-    
+    <div id="ticketModal" class="modal" style="display: none">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal(); window.location.href='manageEvents.html'">&times;</span>
+          <h2 style="color: green;">You have successfully created a event!</h2>
+        </div>
+      </div>
+  
+      <script>
+        function handleFormSubmit(event) {
+          event.preventDefault(); 
+  
+          showModal();
+        }
+  
+        function showModal() {
+          const modal = document.getElementById("ticketModal");
+          modal.style.display = "block";
+        }
+  
+        function closeModal() {
+          const modal = document.getElementById("ticketModal");
+          modal.style.display = "none";
+        }
+  
+        window.onclick = function (event) {
+          const modal = document.getElementById("ticketModal");
+          if (event.target == modal) {
+            closeModal();
+          }
+        };
+      </script>
 </body>
 </html>
