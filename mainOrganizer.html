@@ -22,9 +22,11 @@
       </div>
       <div class="right-header">
         <ul>
+          <li><p style="color: white; text-align: center;"><strong>Welcome Ahmet</strong></p></li>
             <li><button type="button" onclick="window.location.href='createEvent.html'">Create Event</button></a></li>   
-            <li><button type="button" onclick="window.location.href='manageEvents.html'">Manage Event</button></a></li>   
-            <li><p style="color: white;"><strong>Welcome Ahmet</strong></p></li>
+            <li><button type="button" onclick="window.location.href='manageEvents.html'">Manage Event</button></a></li> 
+            <li><button type="button" onclick="window.location.href='index.html'" id="logout">Log out</button></li>   
+  
         </ul>
     </div>
     </header>
@@ -126,7 +128,7 @@
         <h2>Event 1</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         <div class="btn-div">
-          <button onclick="window.location.href='ViewFullDetailsPage.html'" >Event Details</button>
+          <button onclick="window.location.href='ViewFullDetailsOrganizer.html'" >Event Details</button>
         </div>
       </div>
       <i id="favoriteButton" class="fa-regular fa-star favoriteButton"></i>
@@ -139,7 +141,7 @@
           <h2>Event 1</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <div class="btn-div">
-            <button onclick="window.location.href='ViewFullDetailsPage.html'" >Event Details</button>
+            <button onclick="window.location.href='ViewFullDetailsOrganizer.html'" >Event Details</button>
           </div>
         </div>
         <i id="favoriteButton" class="fa-regular fa-star favoriteButton"></i>
@@ -152,13 +154,11 @@
           <h2>Event 1</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <div class="btn-div">
-            <button onclick="window.location.href='ViewFullDetailsPage.html'" >Event Details</button>
+            <button onclick="window.location.href='ViewFullDetailsOrganizer.html'" >Event Details</button>
           </div>
         </div>
         <i id="favoriteButton" class="fa-regular fa-star favoriteButton"></i>
       </div>
-
-     
     </main>
     <script>
 const favoriteButtons = document.querySelectorAll('.favoriteButton');

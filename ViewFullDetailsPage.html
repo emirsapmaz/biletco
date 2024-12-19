@@ -28,7 +28,7 @@
       <div class="right-header">
         <ul>
           <li>
-            <p style="color: white"><strong>Welcome Ahmet</strong></p>
+            <p style="color: white; text-align: center;"><strong>Welcome Ahmet</strong></p>
           </li>
         </ul>
       </div>
@@ -91,11 +91,9 @@
 
       const ticketPrice = 100;
 
-      // Reference to the ticket input and price display
       const ticketInput = document.getElementById("ticket-number");
       const priceDisplay = document.getElementById("price");
 
-      // Event listener to update price whenever ticket number changes
       ticketInput.addEventListener("input", () => {
         const ticketCount = ticketInput.value;
         const totalPrice = ticketCount * ticketPrice;

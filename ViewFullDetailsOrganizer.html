@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Event Page</title>
-    <link rel="stylesheet" href="ManageEventAdmin.css" />
+    <link rel="stylesheet" href="DetailsPage.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -15,7 +15,7 @@
   </head>
   <body>
     <header>
-      <a href="AdminPage.html"><h1>Biletco</h1></a>
+      <a href="mainOrganizer.html"><h1>Biletco</h1></a>
       <div class="search-container">
         <input
           type="text"
@@ -51,6 +51,7 @@
               <label for="category">Category</label>
               <select id="category" name="category">
                 <option value="general">General</option>
+                <option value="vip">VIP</option>
               </select>
             </div>
             <div class="form-item">
@@ -60,44 +61,33 @@
           </div>
 
           <p><strong>Price:</strong> <span id="price">100</span> TL</p>
-          <button class="btn-reject" onclick="rejectEvent()">
-            Reject Event
-          </button>
-          <button class="btn-approve" onclick="showModal()">
-            Approve Event
-          </button>
+
+          <button class="btn" onclick="showModal()">Get Your Ticket!</button>
         </div>
       </div>
     </main>
 
-    <div id="event-approve" class="modal">
+    <div id="ticketModal" class="modal">
       <div class="modal-content">
-        <span class="close" onclick="closeModalApprove(); window.location.href='AdminPage.html'">&times;</span>
-        <h2 style="color: green;">You have sucessfully approved this event! The event is live now!</h2>
-      </div>
-    </div>
-
-    <div id="event-reject" class="modal">
-      <div class="modal-content">
-        <span style="position: relative; bottom: 7px;" class="close" onclick="closeModalReject(); window.location.href='AdminPage.html'">&times;</span>
-        <h2 style="color: red;">You have rejected the event!</h2>
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Your ticket has been successfully purchased!</h2>
+        <p>Your ticket number is xxxx</p>
       </div>
     </div>
 
     <script>
       function showModal() {
-        document.getElementById("event-approve").style.display = "block";
-      }
-      function rejectEvent() {
-        document.getElementById("event-reject").style.display = "block";
+        document.getElementById("ticketModal").style.display = "block";
       }
 
-      function closeModalApprove() {
-        document.getElementById("event-approve").style.display = "none";
+      function closeModal() {
+        document.getElementById("ticketModal").style.display = "none";
       }
-      function closeModalReject() {
-        document.getElementById("event-reject").style.display = "none";
-      }
+      window.onclick = function (event) {
+        if (event.target == document.getElementById("ticketModal")) {
+          closeModal();
+        }
+      };
 
       const ticketPrice = 100;
 

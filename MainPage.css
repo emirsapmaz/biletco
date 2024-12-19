@@ -76,7 +76,6 @@ main {
   height: 42.5px;
 }
 
-
 .img img {
   height: 100%;
   width: 350px;
@@ -183,4 +182,77 @@ select option{
 }
 .wrap i{
   margin-right: 10px;
+}
+
+#logout:hover{
+  background-color: darkred;
+  color: white;
+}
+
+@media (max-width: 1000px) {
+
+  *{
+    font-size: 15px;
+  }
+  header{
+    padding: 0px 20px;
+  }
+  .right-header li {
+    padding: 0px 7px;
+  }
+  .right-header a {
+    font-size: 1.3em;
+  }
+  header h1 {
+    margin: 0px 7px 0px 7px;
+  }
+  .category{
+    margin-bottom: 20px;
+  }
+  .right-header button {
+    padding: 7px;
+  }
+  #search{
+    width: 25vw;
+    padding: 10px;
+    padding-right: 30px;
+    font-size: 13px;
+  }
+
+}
+@media (max-width: 750px) {
+
+  *{
+    font-size: 13px;
+  }
+  header{
+    padding: 0px 10px;
+  }
+  .right-header li {
+    padding: 0px 5px;
+  }
+  header h1 {
+    margin: 0px 7px 0px 7px;
+  }
+  .category{
+    margin-bottom: 15px;
+  }
+  .right-header button {
+    padding: 7px;
+  }
+  main{
+    margin: 0px 10px 0px 10px;
+  }
+  .img img{
+    width: 300px;
+  }
+
+}
+@media (max-width: 620px) {
+  *{
+    font-size: 10px;
+  }
+  .img img{
+    width: 250px;
+  }
 }
